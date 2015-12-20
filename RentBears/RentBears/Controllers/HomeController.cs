@@ -26,5 +26,9 @@ namespace RentBears.Controllers
 
             return View();
         }
+        public ActionResult Example()
+        {
+            return View();
+        }
     }
 }

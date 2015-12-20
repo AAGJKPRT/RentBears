@@ -157,6 +157,51 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\flexslider.css" />
+    <Content Include="Content\css\megamenu.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\bag.jpg" />
+    <Content Include="Content\images\c1.png" />
+    <Content Include="Content\images\c2.png" />
+    <Content Include="Content\images\c3.png" />
+    <Content Include="Content\images\c4.png" />
+    <Content Include="Content\images\cart.png" />
+    <Content Include="Content\images\close.png" />
+    <Content Include="Content\images\f1.jpg" />
+    <Content Include="Content\images\f2.jpg" />
+    <Content Include="Content\images\f3.jpg" />
+    <Content Include="Content\images\f4.jpg" />
+    <Content Include="Content\images\f5.jpg" />
+    <Content Include="Content\images\f6.jpg" />
+    <Content Include="Content\images\glass.jpg" />
+    <Content Include="Content\images\list-hover.png" />
+    <Content Include="Content\images\list-show.png" />
+    <Content Include="Content\images\lo1.png" />
+    <Content Include="Content\images\lo3.png" />
+    <Content Include="Content\images\middle.jpg" />
+    <Content Include="Content\images\move-top.png" />
+    <Content Include="Content\images\p1.jpg" />
+    <Content Include="Content\images\p2.jpg" />
+    <Content Include="Content\images\p3.jpg" />
+    <Content Include="Content\images\p4.jpg" />
+    <Content Include="Content\images\p5.jpg" />
+    <Content Include="Content\images\p6.jpg" />
+    <Content Include="Content\images\p7.jpg" />
+    <Content Include="Content\images\p9.jpg" />
+    <Content Include="Content\images\s1.jpg" />
+    <Content Include="Content\images\s2.jpg" />
+    <Content Include="Content\images\s3.jpg" />
+    <Content Include="Content\images\sh.jpg" />
+    <Content Include="Content\images\shoe.jpg" />
+    <Content Include="Content\images\sht.jpg" />
+    <Content Include="Content\images\social-1.png" />
+    <Content Include="Content\images\social-2.png" />
+    <Content Include="Content\images\social-3.png" />
+    <Content Include="Content\images\tick.png" />
+    <Content Include="Content\images\z1.jpg" />
+    <Content Include="Content\images\z2.jpg" />
+    <Content Include="Content\images\z4.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -168,6 +213,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -176,6 +224,18 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\bootstrap.js" />
+    <Content Include="Scripts\js\easing.js" />
+    <Content Include="Scripts\js\imagezoom.js" />
+    <Content Include="Scripts\js\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\js\jquery.flexisel.js" />
+    <Content Include="Scripts\js\jquery.flexslider.js" />
+    <Content Include="Scripts\js\jquery.jscrollpane.min.js" />
+    <Content Include="Scripts\js\megamenu.js" />
+    <Content Include="Scripts\js\menu_jquery.js" />
+    <Content Include="Scripts\js\move-top.js" />
+    <Content Include="Scripts\js\scripts.js" />
+    <Content Include="Scripts\js\simpleCart.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -194,6 +254,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\example.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
