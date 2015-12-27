@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <!--Content linking js files Start-->
+    <script src="~/Scripts/js/jquery-1.11.1.min.js"></script>
+    <script type="applijegleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script src="~/Scripts/js/bootstrap.js"></script>
     <script src="~/Scripts/js/easing.js"></script>
     <script src="~/Scripts/js/imagezoom.js"></script>
-    <script src="~/Scripts/js/jquery-1.11.1.min.js"></script>
+
     <script src="~/Scripts/js/jquery.flexisel.js"></script>
     <script src="~/Scripts/js/jquery.flexslider.js"></script>
     <script src="~/Scripts/js/jquery.jscrollpane.min.js"></script>
@@ -17,8 +19,10 @@
     <script src="~/Scripts/js/menu_jquery.js"></script>
     <script src="~/Scripts/js/scripts.js"></script>
     <script src="~/Scripts/js/simpleCart.min.js"></script>
-    <script type="applijegleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+
+    @*<script>
+        $.noConflict();
+        $(document).ready(function () { $(".megamenu").megamenu(); });</script>*@
 
     <!--Content linking js files End-->
     <!--Content linking CSS files Start-->
@@ -28,21 +32,25 @@
     <link href="~/Content/css/style.css" rel="stylesheet" />
     <!--Content linking CSS files End-->
     <!--web-fonts-->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,700' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700' rel='stylesheet' type='text/css'>
+    @*<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700' rel='stylesheet' type='text/css'>*@
     <!--//web-fonts-->
     <!--/script-->
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
-            });
-        });
-    </script>
+
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".megamenu").megamenu();
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+
+            });
+        });
+    </script>
 </head>
 <body>
     <!--start-home-->
@@ -87,9 +95,9 @@
                 </div>
                 <!--start-header-menu-->
                 <ul class="megamenu skyblue">
-                    <li class="active grid"><a class="color1" href="index.html">Home</a></li>
+                    <li class="active grid"><a class="color1" href="/Home/index">Home</a></li>
                     <li class="grid">
-                        <a class="color2" href="#">new arrivals</a>
+                        <a class="color2" href="/Home/example">new arrivals</a>
                         <div class="megapanel">
                             <div class="row">
                                 <div class="col1">
