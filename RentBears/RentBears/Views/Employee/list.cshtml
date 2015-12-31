@@ -1,0 +1,106 @@
+﻿@model IEnumerable<RentBears.O_InvestmentTrack>
+
+@{
+    ViewBag.Title = "list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Investment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Period)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CountedDays)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RI)
+        </th>
+  
+     
+        <th>
+            @Html.DisplayNameFor(model => model.Descid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Interest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncomeFrom)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.Valid_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Counted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WishAmt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.wish_count)
+        </th>
+      
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Investment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Period)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CountedDays)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RI)
+        </td>
+     
+        <td>
+            @Html.DisplayFor(modelItem => item.Descid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Interest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncomeFrom)
+        </td>
+  
+        <td>
+            @Html.DisplayFor(modelItem => item.Valid_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Counted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WishAmt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.wish_count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.validdate_old)
+        </td>
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.sno }) |
+            @Html.ActionLink("Details", "Details", new { id=item.sno }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.sno })
+        </td>
+    </tr>
+}
+
+</table>

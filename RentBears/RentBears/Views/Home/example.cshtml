@@ -1,4 +1,7 @@
 ﻿
+    <!--/script-->
+    
+
     <!--start-content-->
     <!--start-banner-->
     <div class="banner">
@@ -315,11 +318,12 @@
             </div>
             <div class="clearfix"> </div>
             <!--start-image-->
-            <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+             <script src="~/Scripts/js/jquery.flexisel.js"></script>
             <!--//end-->
             <script type="text/javascript">
-                $(window).load(function () {
-                    $(".flexiselDemo3").flexisel({
+                var flexisel = jQuery.noConflict();
+                flexisel(window).load(function () {
+                    flexisel(".flexiselDemo3").flexisel({
                         visibleItems: 5,
                         animationSpeed: 1000,
                         autoPlay: true,
@@ -350,7 +354,7 @@
    
     <!--//end-content-->
     <!--start-smooth-scrolling-->
-    <script type="text/javascript">
+    @*<script type="text/javascript">
         $(document).ready(function () {
             /*
             var defaults = {
@@ -364,6 +368,6 @@
             $().UItoTop({ easingType: 'easeOutQuart' });
 
         });
-    </script>
+    </script>*@
     <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 

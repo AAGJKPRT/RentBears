@@ -30,5 +30,14 @@ namespace RentBears.Controllers
         {
             return View();
         }
+        public ActionResult ProductView()
+        {
+            return View();
+        }
+        public ActionResult product()
+        {
+            return View();
+        }
+       
     }
 }

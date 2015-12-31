@@ -571,12 +571,13 @@ figure.effect-bubba p {
 }
 /*--middle--*/
 .middle {
-    background: url(~/Content//images/middle.jpg) no-repeat;
+ 
+    background: url('../images/middle.jpg') no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-    min-height:410px;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    min-height: 410px;
 }
 .mid-top {
     text-align: center;
